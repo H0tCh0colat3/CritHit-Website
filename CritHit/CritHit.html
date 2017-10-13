@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset='UTF-8'/>
+	<title>CritHit!</title>
+	<link href='styles.css' rel='stylesheet'/>
+	</head>
+	<body>
+
+		<div id='menuContainer' class='menuContainer'>
+			<div class='menuBox'>
+				<a href='CritHit.html'><img class= 'picture' src='images/pow_graphic.png'/></a>
+				<div class= 'logo'>Crit Hit</div>
+
+				<div id= 'siteNavigationBox' class='siteNavigationBox'>
+					<div class='link'><a class= 'onSiteUrl' href='https://www.facebook.com/CritHitComics/'>comics</a></div>
+
+					<div class='link'><a class= 'onSiteUrl' href='https://www.facebook.com/CritHitComics/'>games</a></div>
+
+					<div class='link'><a class= 'onSiteUrl' href='CritHit.html#newsContainer'>news</a></div>
+
+					<div id='about' class='link'><a class= 'onSiteUrl' href='about.html'>about</a></div>
+				</div>
+
+				<div id='iconBox' class='iconBox'>
+					<a href='https://www.facebook.com/CritHitComics/'><img class='socialIcon' src='images/fbicon_blue.svg'/></a>
+
+					<a href="https://twitter.com/crithitcomics?lang=en"><img class='socialIcon' src='images/twittericon_blue.svg'/></a>
+
+					<a href="https://www.facebook.com/CritHitComics/"><img class='socialIcon' src='images/igicon_blue.svg'/></a>
+				</div>
+			</div>
+
+			<div class='siteSearchBox'>
+
+				<div class='searchBar'>
+					<img class= 'searchIcon' src='images/searchicon.svg'/>
+				</div>
+
+				<img class= 'menuIcon' src='images/menuicon.svg'/>
+			</div>
+		</div>
+
+		<div class='slideContainer'>
+			<div id="container">
+      			<div class="photobanner">
+			    	<img class="first" src="images/slides/1.jpg" alt="" height="400" />
+			    	<img src="images/slides/2.jpg" alt="" height="400" />
+			    	<img src="images/slides/3.jpg" alt="" height="400" />
+			    	<img src="images/slides/1.jpg" alt="" height="400" />
+			    	<img src="images/slides/2.jpg" alt="" height="400" />
+			    	<img src="images/slides/3.jpg" alt="" height="400" />
+      			</div>
+    		</div>
+		</div>
+
+		<div id='newsContainer' class='newsContainer'>
+			<div class='news'>
+			News
+			</div>
+		</div>
+
+		<div class='main'>
+			<div class='bodyContainer'>
+				<div class='leftSide'>
+					<div class='article'>
+					<h1>Senate Reconfirms FCC Chairman Ajit Pai for Five More Years, a Big Victory for Your ISP</h1>
+					In 52-to-41 vote on Monday, the US Senate reconfirmed Ajit Pai to another term on the Federal Communications Commission, all but ensuring that his efforts to deregulate the telecom industry and destroy net neutrality will carry on.
+					<div class='readMore'><a class= 'onSiteUrl' href='sample1.html'>Read More</a></div>
+					</div>
+				</div>
+
+				<div class='rightSide'>
+					<div class='article'>
+					<h1>NEW YORK COMIC CON Organizers Expand With 2018 PHILADELPHIA Convention</h1>
+					"ReedPOP is launching a new annual convention in Philadelphia named Keystone Comic Con. Scheduled to debut September 14 - 16, 2018 at the Pennsylvania Convention Center, Keystone Comic Con is described as similiar to ReedPOP's New York Comic Con, C2E2, and Emerald City Comic Con, but with "a local twist" for Pennsylvania."
+					<div class='readMore'><a class= 'onSiteUrl' href='sample2.html'>Read More</a></div>
+					</div>
+					<div class='article'>
+					<h1>DEJAH THORIS Relaunched With PRINCESS OF MARS Prequel</h1>
+					"The Princess of Mars is set to return to her throne this January, as Dynamite Entertainment announces the relaunch of one of their most beloved characters, Dejah Thoris. Writer Amy Chu (Poison Ivy, Red Sonja, KISS) will bring the strong, iconic character back to the comics in the debut issue Dejah Thoris #0, which will retail for 25 cents and allow fans to join the adventure at this introductory price. This replicates the outstanding debut of Sheena #0, which broke 120,000 sales. Retailers can confidently stock their shelves with extra copies of this red-hot new series."
+					<div class='readMore'><a class= 'onSiteUrl' href='sample3.html'>Read More</a></div>
+					</div>
+					<div class='article'>
+					<h1>Live-Action SONIC THE HEDGEHOG Stalls At SONY, Jumps to Paramount - Report</h1>
+					"The planned live-action/CGI animated Sonic the Hedgehog film has jumped to Paramount Pictures, according to The Hollywood Reporter. The film was originally announced back in 2014 with Sony, but this jump is reportedly a result of Sony declared the money it put into the film so far a loss in what's called a 'turnaround' in the film industry."
+					<div class='readMore'><a class= 'onSiteUrl' href='sample4.html'>Read More</a></div>
+					</div>
+					<div class='article'>
+					<h1>HULK Hate Arrows In THOR VS. HULK: CHAMPIONS OF THE UNIVERSE #3 Preview</h1>
+					"Nothing complicated about Hulk vs. bow and arrows. Check out this preview of this week's digital-first Thor vs. Hulk: Champions of the Universe #3."
+					<div class='readMore'><a class= 'onSiteUrl' href='sample5.html'>Read More</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script>
+		window.onresize = hidemenu;
+		window.onload = hidemenu;
+		function hidemenu()
+		{
+			if (window.innerWidth < 900)
+			{
+				document.getElementById('siteNavigationBox').style.display='none';
+				document.getElementById('iconBox').style.display='none';
+			}
+			else
+			{
+				document.getElementById('siteNavigationBox').style.display='flex';
+				document.getElementById('iconBox').style.display='inline';
+			}
+		}
+	</script>
+	</body>
+</html>

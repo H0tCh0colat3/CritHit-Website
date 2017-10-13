@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset='UTF-8'/>
+	<title>CritHit!</title>
+	<link href='aboutstyles.css' rel='stylesheet'/>
+	</head>
+	<body>
+		<div id='menuContainer' class='menuContainer'>
+			<div class='menuBox'>
+				<a href='CritHit.html'><img class= 'picture' src='images/pow_graphic.png'/></a>
+				<div class= 'logo'>Crit Hit</div>
+
+				<div id= 'siteNavigationBox' class='siteNavigationBox'>
+					<div class='link'><a class= 'onSiteUrl' href='https://www.facebook.com/CritHitComics/'>comics</a></div>
+
+					<div class='link'><a class= 'onSiteUrl' href='https://www.facebook.com/CritHitComics/'>games</a></div>
+
+					<div class='link'><a class= 'onSiteUrl' href='CritHit.html#newsContainer'>news</a></div>
+
+					<div id='about' class='link'><a class= 'onSiteUrl' href='about.html'>about</a></div>
+				</div>
+
+				<div id='iconBox' class='iconBox'>
+					<a href='https://www.facebook.com/CritHitComics/'><img class='socialIcon' src='images/fbicon_blue.svg'/></a>
+
+					<a href="https://twitter.com/crithitcomics?lang=en"><img class='socialIcon' src='images/twittericon_blue.svg'/></a>
+
+					<a href="https://www.facebook.com/CritHitComics/"><img class='socialIcon' src='images/igicon_blue.svg'/></a>
+				</div>
+			</div>
+
+			<div class='siteSearchBox'>
+
+				<div class='searchBar'>
+					<img class= 'searchIcon' src='images/searchicon.svg'/>
+				</div>
+
+				<img class= 'menuIcon' src='images/menuicon.svg'/>
+			</div>
+		</div>
+
+
+		<div class='main'>
+			<div class='bodyContainer'>
+			<h1>About Us</h1>
+        <h2>Our Mission </h2>
+  				<p>Just a couple of nerds bringing our love of comics to the southern WV area since January 2015. We host events, sell board and card games, dice, Funko Pops, Magic the Gathering, and comics. Come check out our New Comic Wednesdays or Friday Night Magic or just visit the store!</p>
+          <p> Please check our Facebook page to view upcoming events. </p>
+        <h2>Contact</h2>
+          <a href='https://www.facebook.com/CritHitComics/'><img class='socialIcon' src='images/fbicon_blue.svg'/></a>
+          <a href="https://twitter.com/crithitcomics?lang=en"><img class='socialIcon' src='images/twittericon_blue.svg'/></a>
+          <p>(304)431-0021</p>
+
+        <h2> Hours </h2>
+          <p>Monday - Saturday
+          <br> 2:00 pm - 10:00 pm </p>
+          <p>Sunday
+          <br> 12:00 pm - 8:00 pm </p>
+        <h2>Location </h2>
+          <p>1043 Stafford Drive
+          <br>Princeton, WV </p>
+			</div>
+		</div>
+		<script>
+		window.onresize = hidemenu;
+		window.onload = hidemenu;
+		function hidemenu()
+		{
+			if (window.innerWidth < 900)
+			{
+				document.getElementById('siteNavigationBox').style.display='none';
+				document.getElementById('iconBox').style.display='none';
+			}
+			else
+			{
+				document.getElementById('siteNavigationBox').style.display='flex';
+				document.getElementById('iconBox').style.display='inline';
+			}
+		}
+	</script>
+	</body>
+</html>

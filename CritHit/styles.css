@@ -1,0 +1,298 @@
+@font-face 
+{
+    font-family: 'Aaargh';
+    src: url('fonts/aaargh.ttf');
+}
+
+@font-face 
+{
+    font-family: 'Adventure';
+    src: url('fonts/Adventure.otf');
+}
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Adventure';
+}
+
+body 
+{
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-image:  url('images/background.jpg');
+}
+
+h1
+{
+  margin-bottom: 10px;
+}
+
+.menuContainer
+{
+  z-index: 2;
+  background-color: #b3b6bc;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+}
+
+.menuBox
+{
+  display: flex;
+  align-items: center;
+}
+
+.siteNavigationBox
+{
+  display: none;
+  justify-content: center;
+}
+
+.link
+{
+  padding-right: 20px;
+  border-right: 1px solid white;
+  margin: 0px 10px 0px 10px;
+}
+
+#about /*added to remove the border on the far right of the site nav links*/
+{
+  border-right: none;
+}
+
+.onSiteUrl
+{
+  text-decoration: none;
+  color: black;
+  font-family: 'Aaargh';
+}
+
+.onSiteUrl:hover
+{
+  font-style: italic;
+  text-decoration: underline;
+  color: black;
+}
+
+.readMore
+{
+  text-align: right;
+  margin-top: 10px;
+}
+
+.siteSearchBox
+{
+  display: flex;
+  align-items: center
+}
+
+.slideContainer
+{
+  height: 450px;
+  /*background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1), rgba(97,99,102,0));*/
+  justify-content: center;
+}
+
+.newsContainer
+{
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.news
+{
+  background: linear-gradient(to right,rgba(0,0,0,0),rgba(255,255,255,1),rgba(255,255,255,1),rgba(0,0,0,0));
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  display: 
+}
+
+.main
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bodyContainer
+{
+  width: 1200px;
+  display: flex;
+}
+
+.leftSide
+{
+  width: 45%;
+  margin: 20px 10px 20px 20px;
+}
+
+.rightSide
+{
+  width: 55%;
+  margin: 20px 20px 20px 10px;
+}
+
+.article
+{
+  background-color: rgba(255,255,255,0.5);
+  margin-bottom: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 10px;
+  font-family: 'Aaargh';
+}
+
+.slide
+{
+  height: 100%;
+}
+
+.picture
+{
+  height: 48px;
+}
+
+.logo
+{
+  margin-right: 30px;
+  font-size: 40px;
+  font-family: 'Adventure';
+}
+
+.iconBox
+{
+  display: none;
+}
+
+.slogan
+{
+  font-family: 'Aaargh';
+  margin-right: 10px;
+}
+
+.socialIcon
+{
+  margin: 10px;
+  height: 30px;
+}
+
+.socialIcon:hover
+{
+  margin: 5px;
+  height: 40px;
+}
+
+.searchIcon
+{
+  margin: 10px;
+  height: 25px;
+}
+
+.searchIcon:hover
+{
+  margin: 5px;
+  height: 35px;
+}
+
+.menuIcon
+{
+  margin: 10px;
+  height: 25px;
+}
+
+.menuIcon:hover
+{
+  margin: 5px;
+  height: 35px;
+}
+
+
+/*all this jazz for one slideshow, lol*/
+#container {
+  width: 2000px;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 450px;
+}
+
+.photobanner {
+  height: 400px;
+  width: 3474px;
+  margin-bottom: 80px;
+}
+
+.photobanner img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+ 
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/*keyframe animations*/
+
+.first {
+  -webkit-animation: bannermove 30s linear infinite;
+     -moz-animation: bannermove 30s linear infinite;
+      -ms-animation: bannermove 30s linear infinite;
+       -o-animation: bannermove 30s linear infinite;
+          animation: bannermove 30s linear infinite;
+}
+
+/*100% frame = (total width of whole image stream + (5*number of images in stream))/2 */
+ 
+@keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -1737px;}
+}
+ 
+@-moz-keyframes bannermove {
+  0% {margin-left: 0px;}
+  100% {margin-left: -1737px;}
+ }
+ 
+@-webkit-keyframes "bannermove" {
+   0% {margin-left: 0px;}
+  100% {margin-left: -1737px;}
+}
+ 
+@-ms-keyframes "bannermove" {
+0% {margin-left: 0px;}
+100% {margin-left: -1737px;}
+}
+ 
+@-o-keyframes "bannermove" {
+0% {margin-left: 0px;}
+100% {margin-left: -1737px;} 
+}
